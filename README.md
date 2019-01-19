@@ -5,7 +5,7 @@
 
 ## Compiling
 ``` shell
-cmake .
+cmake --build .
 ```
 
 ## Running
