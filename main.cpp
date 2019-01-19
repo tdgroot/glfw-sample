@@ -99,6 +99,7 @@ int main(void)
         ratio = width / (float) height;
         glViewport(0, 0, width, height);
         glClear(GL_COLOR_BUFFER_BIT);
+        glClearColor(.2, .2, .2, 1);
         mat4x4_identity(m);
         mat4x4_rotate_Z(m, m, (float) glfwGetTime());
         mat4x4_ortho(p, -ratio, ratio, -1.f, 1.f, 1.f, -1.f);
